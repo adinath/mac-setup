@@ -25,15 +25,3 @@ if [ -d "$HOME/.oh-my-zsh" ]; then
 else
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
-
-
-## Version Managers - for languages/platforms like JVM, Node, Ruby, Python etc.
-## Currently I need only JVM (Java, Groovy, Kotlin, Scala) related multiple versions
-## we can add tools like RVM, NVM, GVM etc here.
-
-## https://sdkman.io/install
-if [ -d "$HOME/.sdkman/bin" ]; then
-  already_installed "SDKMAN"
-else
-  curl -s "https://get.sdkman.io" | bash
-fi
